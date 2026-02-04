@@ -10,10 +10,15 @@ nav {
     text-align: center;
 }
 
-a {
+nav a {
     color: brown; 
     margin: 0 10px; 
     text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
 header {
@@ -36,7 +41,7 @@ p {
 
 section {
     padding: 1%;
-    background-color: beige;
+    background-color: rgb(253, 226, 185);
 }
 
 .content h3 {
@@ -48,16 +53,18 @@ section {
 }
 
 .content img {
-    width: 200px;          /* opsional */
-    border-radius: 10px;
-    border: 3px solid #ffbb28;
-    padding: 4px;
-    background: #fff;
-}
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid var(--primary);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}    
 
 .info {
     padding: 1%; 
-    background-color:blanchedalmond;
+    background-color:beige;
 }
 
 .bio h3 {
@@ -65,8 +72,8 @@ section {
 }
 
 .bio table {
-    border: 1;
     width: 80%;
+    border-color: #ffbb28;
 }
 
 table tr th {
@@ -75,5 +82,34 @@ table tr th {
 
 .hobi {
     padding: 1%;
-    background-color: bisque;
+    background-color: beige;
+}
+
+.suka h3 {
+    color: brown;
+}
+
+.pddk {
+    padding: 1%;
+    background-color: beige;
+}
+
+.pendidikan h3 {
+    color: brown;
+}
+
+.kontak {
+    padding: 1%;
+    background-color: beige;
+}
+
+.contac h3 {
+    color: brown;
+}
+
+footer {
+    background-color: antiquewhite; 
+    color: brown; 
+    text-align: center; 
+    padding: 1%;
 }
