@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0; 
+    background-color: beige;
+}
+
+nav {
+    background-color: blanchedalmond; 
+    padding: 1%; 
+    text-align: center;
+}
+
+nav a {
+    color: brown; 
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+header {
+    text-align: center; 
+    padding: 30px; 
+    background-color: bisque;
+}
+
+h1 {
+    color: brown;
+}
+
+h3 {
+    color: rgb(28, 28, 27);   
+}
+
+p {
+    color: black;
+}
+
+section {
+    padding: 1%;
+    background-color: rgb(253, 226, 185);
+}
+
+.content h3 {
+    color: brown;
+}
+
+.content p {
+    color: darkslategray;
+}
+
+.content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid var(--primary);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}    
+
+.info {
+    padding: 1%; 
+    background-color:beige;
+}
+
+.bio h3 {
+    color: brown;
+}
+
+.bio table {
+    width: 80%;
+    border-color: #ffbb28;
+}
+
+table tr th {
+    background-color: brown;
+}
+
+.hobi {
+    padding: 1%;
+    background-color: beige;
+}
+
+.suka h3 {
+    color: brown;
+}
+
+.pddk {
+    padding: 1%;
+    background-color: beige;
+}
+
+.pendidikan h3 {
+    color: brown;
+}
+
+.kontak {
+    padding: 1%;
+    background-color: beige;
+}
+
+.contac h3 {
+    color: brown;
+}
+
+footer {
+    background-color: antiquewhite; 
+    color: brown; 
+    text-align: center; 
+    padding: 1%;
+}
