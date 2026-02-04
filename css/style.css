@@ -1,115 +1,143 @@
+/* ===== RESET & GLOBAL ===== */
+:root {
+    --primary: #1f3c88;      /* biru tua */
+    --secondary: #f2f4f7;    /* abu terang */
+    --light: #ffffff;       /* putih */
+    --dark: #2e2e2e;        /* abu gelap */
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif; 
-    margin: 0; 
-    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e6e9f0, #eef1f5);
+    color: var(--dark);
+    margin-left: 220px;
 }
 
+/* ===== NAVBAR ===== */
 nav {
-    background-color: blanchedalmond; 
-    padding: 1%; 
-    text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: var(--light);
+  padding: 20px;
+}
+nav a {
+  display: block;
+  margin: 15px 0;
+  color: #1f2937;
 }
 
-nav a {
-    color: brown; 
-    margin: 0 10px; 
-    text-decoration: none;
-}
 
 nav a:hover {
+    color: #3f55ad;
     text-decoration: underline;
-    color: blue;
 }
 
+/* ===== HEADER ===== */
 header {
-    text-align: center; 
-    padding: 30px; 
-    background-color: bisque;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary);
 }
 
 h1 {
-    color: brown;
+    color: var(--primary);
+    margin-bottom: 10px;
 }
 
 h3 {
-    color: rgb(28, 28, 27);   
+    color: #1f2937;
 }
 
 p {
-    color: black;
+    color: var(--dark);
 }
 
-section {
-    padding: 1%;
-    background-color: rgb(253, 226, 185);
+/* ===== SECTION UMUM ===== */
+section,
+.info,
+.hobi,
+.pddk,
+.kontak {
+    padding: 25px;
+    margin: 20px auto;
+    background-color: var(--light);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== CONTENT ===== */
+.content {
+    text-align: center;
 }
 
 .content h3 {
-    color: brown;
+    color: var(--primary);
 }
 
 .content p {
-    color: darkslategray;
+    color: var(--dark);
 }
 
 .content img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
     margin: 20px 0;
     border: 5px solid var(--primary);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}    
-
-.info {
-    padding: 1%; 
-    background-color:beige;
+    box-shadow: 0 8px 20px rgba(71, 109, 154, 0.799);
+    transition: 0.3s;
 }
 
-.bio h3 {
-    color: brown;
+.content img:hover {
+    transform: scale(1.04);
+}
+
+/* ===== BIODATA ===== */
+.bio h3,
+.suka h3,
+.pendidikan h3,
+.kontak h3 {
+    text-align: center;
+    color: var(--primary);
 }
 
 .bio table {
-    width: 80%;
-    border-color: #ffbb28;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.bio table th,
+.bio table td {
+    padding: 10px;
+    border: 1px solid #d1d5db;
 }
 
 table tr th {
-    background-color: brown;
+    background-color: #1f3c88;
+    color: white;
 }
 
-.hobi {
-    padding: 1%;
-    background-color: beige;
-}
-
-.suka h3 {
-    color: brown;
-}
-
-.pddk {
-    padding: 1%;
-    background-color: beige;
-}
-
-.pendidikan h3 {
-    color: brown;
-}
-
-.kontak {
-    padding: 1%;
-    background-color: beige;
-}
-
-.contac h3 {
-    color: brown;
-}
-
+/* ===== FOOTER ===== */
 footer {
-    background-color: antiquewhite; 
-    color: brown; 
-    text-align: center; 
-    padding: 1%;
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #374151;
+    font-weight: bold;
 }
