@@ -1,35 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+/* IMPORT FONT MEWAH */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
 
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poopins", sans-serif;
 }
 
+/* BODY BACKGROUND */
 body {
     min-height: 100vh;
-    border-width: 20px;
+    max-width: 100%;
+    background: url(../img/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/3.jpg);
-    background-position: center;
-    background-size: 70%;
+    font-family: "Poppins", sans-serif;
 }
 
+/* CARD UTAMA */
 .open {
-    background: rgba(251, 247, 247, 0.822);
-   border-radius: 26px;
-   padding: 80px;
-   text-align: center;
-   box-shadow: 0 10px 30px rgba(253, 75, 158, 0.644);
-   backdrop-filter: blur(1px);
+    background: rgba(235, 226, 226, 0.25);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 28px;
+    padding: 60px 55px;
+    max-width: 460px;
+    width: 90%;
+    text-align: center;
+
+    box-shadow:
+        0 25px 60px rgba(155, 135, 190, 0.45),
+        inset 0 0 30px rgba(255, 255, 255, 0.35);
+
+    border: 1px solid rgba(230, 215, 255, 0.6);
+    animation: fadeUp 1.4s ease;
 }
 
-h1 {
-    text-align: center;
-    font-size: 1,2rem;
-    margin-bottom: 13px;
+/* JUDUL */
+.open h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: #a867ed;
+    margin-bottom: 16px;
+    text-shadow: 0 3px 10px rgba(180, 150, 220, 0.5);
+}
+
+/* SUBTITLE */
+.open p {
+    font-size: 15px;
+    color: #5f4a7a;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* LINK BUTTON */
+.open a {
+    display: block;
+    margin: 18px auto;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 320px;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.45s ease;
+}
+
+/* BUTTON IZZA */
+.open .izza {
+    color: #4b2c6f;
+    background: linear-gradient(135deg, #e6d7ff, #cbb6f2);
+    box-shadow:
+        0 12px 30px rgba(165, 140, 210, 0.6),
+        inset 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* BUTTON LETA */
+.open .leta {
+    color: #ffffff;
+    background: linear-gradient(135deg, #8e6bbf, #b39ddb);
+    box-shadow:
+        0 12px 30px rgba(120, 90, 170, 0.6),
+        inset 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+/* HOVER EFEK MEWAH */
+.open a::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.35), transparent 60%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.open a:hover::before {
+    opacity: 1;
+}
+
+.open a:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(150, 120, 200, 0.7);
+}
+
+/* ANIMASI MASUK */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .open {
+        padding: 45px 30px;
+    }
+
+    .open h1 {
+        font-size: 26px;
+    }
 }
