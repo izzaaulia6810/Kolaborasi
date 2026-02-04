@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poopins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    border-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: 70%;
+}
+
+.open {
+    background: rgba(251, 247, 247, 0.822);
+   border-radius: 26px;
+   padding: 80px;
+   text-align: center;
+   box-shadow: 0 10px 30px rgba(253, 75, 158, 0.644);
+   backdrop-filter: blur(1px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1,2rem;
+    margin-bottom: 13px;
+}
