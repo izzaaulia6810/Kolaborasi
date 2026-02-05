@@ -12,7 +12,7 @@
 body {
     min-height: 100vh;
     max-width: 100%;
-    background: url(../img/4.jpg);
+    background:linear-gradient(#e6d7ff, #c5b1ea);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -45,7 +45,7 @@ body {
 .open h1 {
     font-family: "Playfair Display", serif;
     font-size: 32px;
-    color: #a867ed;
+    color: #634187;
     margin-bottom: 16px;
     text-shadow: 0 3px 10px rgba(180, 150, 220, 0.5);
 }
